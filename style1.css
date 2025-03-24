@@ -1,0 +1,97 @@
+/* Căn chỉnh toàn bộ nội dung */
+body {
+  margin: 4;
+  padding: 0;
+  font-family: 'Yipes Regular', serif;
+  font-weight: normal;
+  background: url('Frame\ 5.png') no-repeat center center fixed;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Định dạng container chính */
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Tiêu đề thư mời */
+.title {
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #2b2b2b;
+}
+
+/* Hình ảnh lá thư */
+.envelop {
+  width: 500px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.envelop:hover {
+  transform: scale(1.05);
+}
+
+/* Dòng chữ nhỏ */
+.subtitle {
+  font-size: 60px;
+  font-weight: normal;
+  margin: 15px 0;
+}
+
+/*BG ẩn*/
+body {
+    background-image: url('assets/Frame 7.png'); 
+    background-size: cover; /* Ảnh phủ toàn bộ màn hình */
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh; /* Đảm bảo toàn màn hình */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.instruction {
+  font-size: 20px;
+  font-family: 'Yipes';
+  src: url('fonts/lora-italic.woff2') format('woff2'),
+       url('fonts/lora-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 📌 **Responsive */
+/* 🔹 Mobile (dưới 480px) */
+@media (max-width: 480px) {
+  .container {
+      width: 90%;
+      font-size: 14px;
+  }
+  .letter {
+      font-size: 18px;
+      padding: 8px;
+  }
+}
+
+/* 🔹 Tablet (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+      width: 80%;
+  }
+}
+
+/* 🔹 Màn hình lớn (trên 768px) */
+@media (min-width: 769px) {
+  .container {
+      width: 50%;
+  }
+}
